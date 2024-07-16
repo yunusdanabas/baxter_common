@@ -34,6 +34,7 @@ add_message_files(DIRECTORY msg FILES
   RobustControllerStatus.msg
   SEAJointState.msg
   URDFConfiguration.msg
+  BridgePublisher.msg
 )
 
 add_service_files(DIRECTORY srv FILES
@@ -41,6 +42,8 @@ add_service_files(DIRECTORY srv FILES
   ListCameras.srv
   OpenCamera.srv
   SolvePositionIK.srv
+  BridgePublishersAuth.srv
+  BridgePublishersForce.srv
 )
 
 generate_messages(DEPENDENCIES
